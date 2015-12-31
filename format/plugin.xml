@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="JSON Format"
+            visible="true"
+            id="format.actionSet">
+         <menu
+               label="Diy"
+               id="sampleMenu">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               label="JSON Format"
+               icon="icons/sample.gif"
+               class="format.actions.FormatAction"
+               tooltip="JSON Format"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="format.actions.FormatAction">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>
