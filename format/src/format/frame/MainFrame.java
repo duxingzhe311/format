@@ -83,7 +83,7 @@ public class MainFrame {
     btnTransform.addSelectionListener(new SelectionAdapter() {
       @Override
       public void widgetSelected(SelectionEvent e) {
-        System.exit(0);
+        shell.dispose();
       }
     });
     
